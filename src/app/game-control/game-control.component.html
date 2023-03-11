@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h3><b>Pressing Your Luck</b></h3>
+            <h3>If you press the <b>Red Button</b> more than 20 times in 7 Seconds then you Win</h3>
+        </div>
+        <div class="col-xs-12 counting">
+            <h1><b>{{count}}</b></h1>
+            <button class="btn btn-danger gamebtn" (click)="onCount()"></button>
+        </div>
+        <div class="col-xs-12">
+            <button class="btn btn-primary" (click)="onStart()">Start Game</button>
+        </div>
+    </div>
+    <div class="row" *ngIf="stoppingCondition===true">
+        <div class="col-xs-12"> 
+            <h2 *ngIf="values>=20"><app-even-component [evenCount]="values"></app-even-component></h2>
+            <h2 *ngIf="values<20"><app-odd [oddCount]="values"></app-odd></h2>
+        </div>
+    </div>
+</div>
+
+
+
+
+

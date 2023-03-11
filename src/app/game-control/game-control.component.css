@@ -1,0 +1,22 @@
+.container{
+    margin-top: 20px;
+    display: flex;
+    text-align:center;
+    /* background-color: aqua; */
+}
+.btn{
+    margin-right: 10px;
+}
+
+.counting{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gamebtn{
+    color: red;
+    border-radius: 100px;
+    padding-top: 50px;
+    padding-right: 50px;
+    margin-top: 20px;
+}
